@@ -13,8 +13,7 @@ The provided dataset, "Data_for_Feature_Scaling.csv," is used to demonstrate the
 ### MinMaxScaler (Normalization)
 
 MinMaxScaler, also known as normalization, shifts values in a column to be bounded between 0 and 1. The normalization formula is given by:
-
-�new=(�−�min)(�max−�min)Xnew​=(Xmax​−Xmin​)(X−Xmin​)​
+$\` mathbf{X}_i = ( X - mathbf{X}_min)/ (mathbf{X}_max - mathbf{X}_min) `/$
 
 ### StandardScaler (Zero-score Normalization)
 
