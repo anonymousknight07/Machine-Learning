@@ -12,14 +12,23 @@ The provided dataset, "Data_for_Feature_Scaling.csv," is used to demonstrate the
 
 ### MinMaxScaler (Normalization)
 
-MinMaxScaler, also known as normalization, shifts values in a column to be bounded between 0 and 1. The normalization formula is given by:
-$\` mathbf{X}_i = ( X - mathbf{X}_min)/ (mathbf{X}_max - mathbf{X}_min) `/$
+MinMaxScaler, also known as normalization, shifts values in a column to be bounded between 0 and 1. 
+The normalization formula is given by:
+``` math
+ {X}_i = ( X_{i} - {X}_v)/ ({X}_t - {X}_v) 
+```
+
+where, X <sub>v</sub> is the minimum data point and X <sub>t</sub> is the maximum data point.
 
 ### StandardScaler (Zero-score Normalization)
 
 StandardScaler, or zero-score normalization, rescales values to demonstrate properties of a standard Gaussian distribution, with mean = 0 and variance = 1. The standardization formula is given by:
 
-�new=(�−mean)stdXnew​=std(X−mean)​
+``` math
+  Z= (X-𝜶)/𝝈
+
+```
+where X is the score, 𝜶 is the mean and 𝝈 is the variance. 
 
 ## Models Requiring Feature Scaling
 
